@@ -1,3 +1,5 @@
+// --- Start of commented out original code ---
+/*
 import Branding from '@/components/blocks/branding';
 import CTA from '@/components/blocks/cta';
 import FAQ from '@/components/blocks/faq';
@@ -19,12 +21,15 @@ export default async function LandingPage({
 }: {
   params: { locale: string };
 }) {
+  console.log(`[page.tsx] Attempting to get landing page for locale: ${locale}`);
   const page = await getLandingPage(locale);
 
   if (!page) {
+    console.error(`[page.tsx] Page data not found for locale: ${locale}`);
     return <div>Page not found</div>;
   }
 
+  console.log(`[page.tsx] Page data loaded successfully for locale: ${locale}`);
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
@@ -40,5 +45,23 @@ export default async function LandingPage({
       {page.faq && <FAQ section={page.faq} />}
       {page.cta && <CTA section={page.cta} />}
     </>
+  );
+}
+*/
+// --- End of commented out original code ---
+
+// Minimal test component with logging
+console.log('[page.tsx] File loaded. Defining TestLandingPage component.');
+
+export default function TestLandingPage({ params }: { params: { locale: string } }) {
+  console.log(`[page.tsx] TestLandingPage component is rendering for locale: ${params.locale}`);
+
+  return (
+    <div style={{ padding: '40px', fontFamily: 'sans-serif' }}>
+      <h1>Build and Render Test Page</h1>
+      <p>If you see this page, the build pipeline and component rendering are working correctly.</p>
+      <p>Current locale: <strong>{params.locale}</strong></p>
+      <p>Check the server logs in Google Cloud Run for '[page.tsx]' messages to trace execution.</p>
+    </div>
   );
 }
