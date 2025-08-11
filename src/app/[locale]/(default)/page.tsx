@@ -11,9 +11,10 @@ import Showcase from '@/components/blocks/showcase';
 import Stats from '@/components/blocks/stats';
 import Testimonial from '@/components/blocks/testimonial';
 import { getLandingPage } from '@/services/page';
-import { useTranslations } from 'next-intl';
 
-export default async function LandingPage({
+// This is the correct way to type the props for a page in the App Router.
+// It avoids conflicts with other potential 'PageProps' types.
+export default async function LandingPage({ 
   params: { locale },
 }: {
   params: { locale: string };
