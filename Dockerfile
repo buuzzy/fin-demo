@@ -8,6 +8,8 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json pnpm-lock.yaml* ./
+# Copy the required config file for fumadocs-mdx
+COPY source.config.ts ./
 RUN pnpm i --frozen-lockfile
 
 # Rebuild the source code only when needed
