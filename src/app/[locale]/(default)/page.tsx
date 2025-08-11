@@ -50,15 +50,16 @@ export default async function LandingPage({
 */
 // --- End of commented out original code ---
 
-// Minimal test component with logging
+// Minimal test component with logging, corrected for async params.
 console.log('[page.tsx] File loaded. Defining TestLandingPage component.');
 
-export default function TestLandingPage({ params }: { params: { locale: string } }) {
+export default async function TestLandingPage({ params: paramsPromise }: { params: Promise<{ locale: string }> }) {
+  const params = await paramsPromise;
   console.log(`[page.tsx] TestLandingPage component is rendering for locale: ${params.locale}`);
 
   return (
     <div style={{ padding: '40px', fontFamily: 'sans-serif' }}>
-      <h1>Build and Render Test Page</h1>
+      <h1>Build and Render Test Page (Async Corrected)</h1>
       <p>If you see this page, the build pipeline and component rendering are working correctly.</p>
       <p>Current locale: <strong>{params.locale}</strong></p>
       <p>Check the server logs in Google Cloud Run for '[page.tsx]' messages to trace execution.</p>
