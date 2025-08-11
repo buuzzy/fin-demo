@@ -4,6 +4,48 @@
     "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, Ship Fast with a variety of templates and components.",
     "keywords": "ShipAny, AI SaaS Boilerplate, NextJS Boilerplate"
   },
+  "landing": {
+    "hero": {
+      "title": "Build and Ship Your AI SaaS in Hours, Not Weeks.",
+      "description": "With our Next.js boilerplate, you get a production-ready foundation with all the features you need to launch your AI startup quickly and efficiently.",
+      "cta": "Get Started for Free"
+    },
+    "features": {
+      "title": "All The Features You Need",
+      "description": "ShipAny comes with a complete set of features to help you build and scale your AI SaaS.",
+      "items": {
+        "authentication": {
+          "title": "Authentication",
+          "description": "Secure user authentication (Google, GitHub, Email)."
+        },
+        "database": {
+          "title": "Database",
+          "description": "Integrated with Drizzle ORM for easy database management."
+        },
+        "payment": {
+          "title": "Payment",
+          "description": "Stripe integration for seamless payment processing."
+        },
+        "ai_integration": {
+          "title": "AI Integration",
+          "description": "Easily integrate with various AI models and services."
+        },
+        "multi_tenancy": {
+          "title": "Admin",
+          "description": "Admin system for easy user and resource management."
+        },
+        "internationalization": {
+          "title": "Internationalization",
+          "description": "Built-in support for multiple languages (i18n)."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Launch Your AI Idea?",
+      "description": "Don't waste time on boilerplate code. Focus on what makes your product unique. Get ShipAny and start building today.",
+      "cta": "Purchase Now"
+    }
+  },
   "user": {
     "sign_in": "Sign In",
     "sign_out": "Sign Out",
