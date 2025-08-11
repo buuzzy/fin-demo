@@ -11,14 +11,13 @@ import Showcase from '@/components/blocks/showcase';
 import Stats from '@/components/blocks/stats';
 import Testimonial from '@/components/blocks/testimonial';
 import { getLandingPage } from '@/services/page';
+import { useTranslations } from 'next-intl';
 
-interface PageProps {
-  params: {
-    locale: string;
-  };
-}
-
-export default async function LandingPage({ params: { locale } }: PageProps) {
+export default async function LandingPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   const page = await getLandingPage(locale);
 
   if (!page) {
