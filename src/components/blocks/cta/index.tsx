@@ -14,12 +14,12 @@ export default function CTA({ section }: { section: SectionType }) {
         <div className='flex items-center justify-center rounded-2xl  bg-[url("/imgs/masks/circle.svg")] bg-cover bg-center px-8 py-12 text-center md:p-16'>
           <div className="mx-auto max-w-(--breakpoint-md)">
             <h2 className="mb-4 text-balance text-3xl font-semibold md:text-5xl">
-              {section.title}
+              开启您的智能交易之旅
             </h2>
             <p className="text-muted-foreground md:text-lg">
-              {section.description}
+              立即开始，体验由数据驱动的精准交易分析，让复杂的市场决策变得简单清晰。
             </p>
-            {section.buttons && (
+            {/* {section.buttons && (
               <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                 {section.buttons.map((item, idx) => (
                   <Button key={idx} variant={item.variant || "default"}>
@@ -36,7 +36,7 @@ export default function CTA({ section }: { section: SectionType }) {
                   </Button>
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

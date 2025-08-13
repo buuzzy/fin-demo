@@ -6,10 +6,8 @@
 - [x] 创建交易页面 (`/src/app/[locale]/trade/page.tsx`)
 - [x] 交易页面逻辑完善：根据 `referdocs/trade-page.tsx` 的内容，更新 `/trade` 页面的代码，并确保其与 Dify API 的交互功能正常。
 - [x] 定义 `trade_logs` 数据库表结构
-
-## 未完成
-
-- [ ] **主页改造**：根据 `referdocs/主页.tsx` 的内容，修改项目现有主页。
+- [x] **主页改造**：根据 `referdocs/主页.tsx` 的内容，修改项目现有主页。
+  - [x] 在主页添加明确的按钮或链接，使用 `next-intl` 的 `Link` 组件指向 `/trade` 页面，以确保正确的国际化路由跳转。
 
 ## 待定/后续任务
 
